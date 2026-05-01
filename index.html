@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TailwinCSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- DAISY UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Manrope Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- Primary Color -->
+    <style>
+        :root {
+            --color-primary: #FF4240;
+            --color-primary-content: #FFFFFF;
+        }
+    </style>
+    <title>Hockey's</title>
+</head>
+
+<body class="font-[Manrope]">
+    <section class="w-full h-screen">
+        <!-- Navbar -->
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="-1"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                        <li><a>Home</a></li>
+                        <li>
+                            <a>About</a>
+                        </li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost text-3xl font-extrabold">Hockey<span class="text-red-500">'</span>s</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li>
+                        <a>About</a>
+                    </li>
+                    <li><a>Pages</a></li>
+                    <li><a>Blog</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <input type="text" placeholder="Search" class="input input-bordered border-0 hidden lg:flex" />
+                <a class="btn btn-primary">Get Ticket</a>
+            </div>
+        </div>
+        <!-- Hero -->
+        <div class="flex justify-center items-center mt-20">
+            <div class="carousel w-11/12 lg:h-[550px]">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="./Images/1.png" class="w-full" />
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="./Images/2.png" class="w-full" />
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="./Images/3.png" class="w-full" />
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full">
+                    <img src="./Images/4.png" class="w-full" />
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="h-auto w-11/12 mx-auto">
+        <!-- Professional Club section -->
+        <div class="lg:flex flex-col items-center justify-center gap-6">
+            <h1 class="font-extrabold text-4xl">Professional Hockeys Club</h1>
+            <p class="text-gray-400">We provide you with high class training facilities and opportunities to grow at
+                your fullest potential</p>
+        </div>
+        <!-- Progess Section -->
+        <div class="lg:flex mt-12">
+            <div class="card bg-base-100 w-96">
+                <figure class="px-10 pt-10">
+                    <div class="radial-progress text-red-600" style="--value:70;" aria-valuenow="70" role="progressbar">
+                        70%</div>
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title">Card Title</h2>
+                    <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                </div>
+            </div>
+            <div class="card bg-base-100 w-96">
+                <figure class="px-10 pt-10">
+                    <div class="radial-progress text-red-600" style="--value:70;" aria-valuenow="70" role="progressbar">
+                        70%</div>
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title">Card Title</h2>
+                    <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                </div>
+            </div>
+            <div class="card bg-base-100 w-96">
+                <figure class="px-10 pt-10">
+                    <div class="radial-progress text-red-600" style="--value:70;" aria-valuenow="70" role="progressbar">
+                        70%</div>
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title">Card Title</h2>
+                    <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                </div>
+            </div>
+            <div class="card bg-base-100 w-96">
+                <figure class="px-10 pt-10">
+                    <div class="radial-progress text-red-600" style="--value:70;" aria-valuenow="70" role="progressbar">
+                        70%</div>
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title">Card Title</h2>
+                    <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mt-24 mx-auto">
+        <!-- Program Section -->
+        <div class="lg:flex flex-col items-center justify-center gap-6">
+            <h1 class="font-extrabold text-4xl">Program Sections</h1>
+            <p class="text-gray-400">We have all kinds of up to date programs only for you ready to push yourself to the
+                fullest</p>
+        </div>
+        <!-- Grid Section -->
+        <div class="grid grid-cols-1 lg:grid-rows-2 lg:grid-cols-2 gap-4 w-11/12 mx-auto mt-20">
+            <!-- Junior Program -->
+            <div class="card image-full shadow-sm h-72 overflow-hidden">
+                <figure class="h-full"><img src="./Images/2.png" alt="Junior Program"
+                        class="w-full h-full object-cover" /></figure>
+                <div class="card-body justify-end">
+                    <h2 class="card-title">Junior Program</h2>
+                    <p class="text-sm line-clamp-3">Designed for kids aged 6–12, our Junior Program introduces the
+                        fundamentals of the sport in a fun, safe, and encouraging environment.</p>
+                    <div class="card-actions"><button class="btn btn-primary">Register Now!</button></div>
+                </div>
+            </div>
+
+            <!-- Teenager Program -->
+            <div class="card image-full shadow-sm h-72 overflow-hidden">
+                <figure class="h-full"><img src="./Images/3.png" alt="Teenager Program"
+                        class="w-full h-full object-cover" /></figure>
+                <div class="card-body justify-end">
+                    <h2 class="card-title">Teenager Program</h2>
+                    <p class="text-sm line-clamp-3">Tailored for teens aged 13–17, this program focuses on developing
+                        tactical awareness, advanced techniques, and competitive mindset.</p>
+                    <div class="card-actions"><button class="btn btn-primary">Register Now!</button></div>
+                </div>
+            </div>
+
+            <!-- Professional Program -->
+            <div class="card image-full shadow-sm lg:col-span-2 lg:row-span-2 h-80 overflow-hidden">
+                <figure class="h-full"><img src="./Images/4.png" alt="Professional Program"
+                        class="w-full h-full object-cover" /></figure>
+                <div class="card-body justify-end">
+                    <h2 class="card-title">Professional Program</h2>
+                    <p class="text-sm line-clamp-3">For serious athletes ready to compete at the highest level. Our
+                        Professional Program offers elite coaching, intensive training sessions, and access to regional
+                        and national tournaments.</p>
+                    <div class="card-actions"><button class="btn btn-primary">Register Now!</button></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mt-20">
+        <!-- Our New Products -->
+        <div class="lg:flex flex-col items-center justify-center gap-6">
+            <h1 class="font-extrabold text-4xl">Our New Products</h1>
+            <p class="text-gray-400">Check out our latest product collection. We provide varities of products ensuring
+                their richness in quality</p>
+        </div>
+        <!-- Collection of Products -->
+        <div>
+            <div class="card card-side bg-base-100 shadow-sm">
+                <figure>
+                    <img src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp" alt="Movie" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title">New movie is released!</h2>
+                    <p>Click the button to watch on Jetflix app.</p>
+                    <div class="card-actions justify-end">
+                        <button class="btn btn-primary">Watch</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
